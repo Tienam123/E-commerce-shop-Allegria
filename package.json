@@ -1,8 +1,8 @@
 {
-  "name": "fls-start",
+  "name": "Allegria",
   "version": "3.0.0",
-  "description": "Start template with Gulp and Webpack",
-  "homepage": "https://github.com/Tienam123/fls-gulp-webpack/",
+  "description": "E-commerce Allegria",
+  "homepage": "https://github.com/Tienam123/E-commerce-shop-Allegria/",
   "author": "Vladyslav Honchar <vladyslav.honchar1990@gmail.com>",
   "private": true,
   "type": "module",
@@ -15,17 +15,17 @@
     "deploy": "gulp deployFTP --build",
     "zip": "gulp deployZIP --build",
     "devbuild": "gulp build --build --nowebp",
-	 "postdevbuild": "gh-pages -d dist",
+    "postdevbuild": "gh-pages -d dist",
     "tmp": "gulp -f gulpfile.tmp.js",
     "bem": "fls-bemtree-from-html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tienam123/fls-gulp-webpack.git"
+    "url": "git+https://github.com/Tienam123/E-commerce-shop-Allegria.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/Tienam123/fls-gulp-webpack/issues"
+    "url": "https://github.com/Tienam123/E-commerce-shop-Allegria/issues"
   },
   "devDependencies": {
     "copy-webpack-plugin": "latest",
@@ -68,7 +68,7 @@
     "smooth-scroll": "latest",
     "string-replace-loader": "latest",
     "style-loader": "latest",
-    "swiper": "latest",
+    "swiper": "^10.2.0",
     "terser-webpack-plugin": "latest",
     "tippy.js": "latest",
     "transform-runtime": "0.0.0",
