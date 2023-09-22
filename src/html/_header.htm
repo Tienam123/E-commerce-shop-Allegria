@@ -9,10 +9,12 @@
 
       <ul class="nav-menu__items menu-nav">
         <li class="menu-nav__item">
-          <button class="menu-nav__button" type="button">Женщины</button>
+          <a class="menu-nav__button" href="./index.html">Женщины</a>
         </li>
         <li class="menu-nav__item">
-          <button class="menu-nav__button" type="button">Мужчины</button>
+          <button class="menu-nav__button_not-active" disabled type="button">
+            Мужчины
+          </button>
         </li>
         <li class="menu-nav__item">
           <label class="menu-nav__find-item" for="find-item">
@@ -64,15 +66,17 @@
             <use href="@img/icons/icons.svg#svg-burger"></use>
           </svg>
         </button>
-        <button type="button" class="menu-toggle js-close-menu modal-scroll">
-          <svg class="svg-svg-burger-close-dims" width="19" height="20">
+        <button
+          type="button"
+          class="menu-toggle js-close-menu modal-scroll hide"
+        >
+          <svg class="svg-svg-burger-close-dims" width="16" height="18">
             <use xlink:href="@img/icons/icons.svg#svg-burger-close"></use>
           </svg>
         </button>
       </div>
 
       <!-- ========================================================================== -->
-     
 
       <!-- =========================================================================== -->
 

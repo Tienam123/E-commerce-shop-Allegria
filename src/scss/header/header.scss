@@ -1,0 +1,99 @@
+.header {
+	padding: 20px 0;
+	border-bottom: 1px solid #eae9e8;
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	// .header_nav
+	&_nav {
+		font-family: "Avenir";
+		font-size: 16px;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+	}
+	// .header__container
+	&__container {
+	}
+	// .header__mobile-menu
+	&__mobile-menu {
+	}
+}
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// .nav-menu__logo
+	&__logo {
+	}
+	// .nav-menu__items
+	&__items {
+	}
+	// .nav-menu__actions-wrapper
+	&__actions-wrapper {
+		display: flex;
+	}
+	// .nav-menu__language
+	&__language {
+	}
+	// .nav-menu__actions
+	&__actions {
+	}
+}
+.svg-svg-logo-dims {
+}
+.menu-nav {
+	display: flex;
+	@include adaptiveValue("column-gap", 42, 0);
+	@media (max-width: em(819)) {
+		display: none;
+	}
+	// .menu-nav__item
+	&__item {
+	}
+	// .menu-nav__button
+	&__button {
+		text-transform: uppercase;
+	}
+	&__button_not-active {
+		color: $disabled;
+		text-transform: uppercase;
+	}
+	// .menu-nav__find-item
+	&__find-item {
+		input {
+			border-bottom: 1px solid $mainColor;
+			outline: none;
+			&:focus-within {
+				border-bottom: 1px solid $hoverColor;
+			}
+		}
+	}
+}
+.language-menu {
+	display: flex;
+	column-gap: 20px;
+	@media (max-width: em(820)) {
+		display: none;
+	}
+	// .language-menu__item
+	&__item {
+	}
+	// .language-menu__link
+	&__link {
+	}
+}
+.actions-nav {
+	display: flex;
+	column-gap: 20px;
+	margin-left: 78px;
+	// .actions-nav__menu
+	&__menu {
+	}
+}
+.svg-svg-profile-dims {
+}
+.svg-svg-like-dims {
+}
+.svg-svg-basket-dims {
+}
+@import "burger";
