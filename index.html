@@ -6,13 +6,14 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230922080931" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230924111326" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -23,203 +24,182 @@
 						</svg>
 					</a>
 
-					<ul class="nav-menu__items menu-nav">
-						<li class="menu-nav__item">
-							<a class="menu-nav__button" href="./index.html">Женщины</a>
-						</li>
-						<li class="menu-nav__item">
-							<button class="menu-nav__button_not-active" disabled type="button">
-								Мужчины
-							</button>
-						</li>
-						<li class="menu-nav__item">
-							<label class="menu-nav__find-item" for="find-item">
-								Поиск
-								<input type="text" name="" id="find-item" />
-							</label>
-						</li>
-					</ul>
-					<div class="nav-menu__actions-wrapper">
-						<ul class="nav-menu__language language-menu">
-							<li class="language-menu__item">
-								<a class="language-menu__link" href="http://">RU</a>
-							</li>
-							<li class="language-menu__item">
-								<a class="language-menu__link" href="http://">UA</a>
-							</li>
-							<li class="language-menu__item">
-								<a class="language-menu__link" href="http://">EN</a>
-							</li>
-						</ul>
-						<ul class="nav-menu__actions actions-nav">
-							<li class="actions-nav__menu">
-								<a href="http://">
-									<svg class="svg-svg-profile-dims" width="16" height="18">
-										<use href="img/icons/icons.svg#svg-profile"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="actions-nav__menu">
-								<a href="http://">
-									<svg class="svg-svg-like-dims" width="19" height="18">
-										<use href="img/icons/icons.svg#svg-like"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="actions-nav__menu">
-								<a href="http://">
-									<svg class="svg-svg-basket-dims" width="16" height="18">
-										<use href="img/icons/icons.svg#svg-basket"></use>
-									</svg></a>
-							</li>
-						</ul>
-						<button class="menu-toggle js-open-menu modal-scroll" aria-expanded="false" aria-controls="mobile-menu">
-							<svg class="svg-svg-burger-dims" width="16" height="18">
-								<use href="img/icons/icons.svg#svg-burger"></use>
-							</svg>
-						</button>
-						<button type="button" class="menu-toggle js-close-menu modal-scroll hide">
-							<svg class="svg-svg-burger-close-dims" width="16" height="18">
-								<use xlink:href="img/icons/icons.svg#svg-burger-close"></use>
-							</svg>
-						</button>
-					</div>
-
-					<!-- ========================================================================== -->
-
-					<!-- =========================================================================== -->
-
-					<!-- Меню  бургер -->
-
 					<div class="menu-container js-menu-container" id="mobile-menu">
 						<div class="backdrop">
-							<!-- Кнопка закрыть -->
+							<!-- ========================== / Nav-menu / ========================== -->
+							<ul class="nav-menu__items menu-nav">
+								<li class="menu-nav__item">
+									<a class="menu-nav__button" href="./index.html">Женщины</a>
+								</li>
+								<li class="menu-nav__item">
+									<button class="menu-nav__button_not-active" disabled type="button">
+										Мужчины
+									</button>
+								</li>
+							</ul>
+							<!-- ========================== / Nav-menu / ========================== -->
 
-							<!-- Mobile menu -->
-							<ul class="header__mobile-menu mobile-menu">
-								<ul class="mobile-menu__items">
-									<li class="mobile-menu__item">
-										<button class="mobile-menu__button" type="button">
-											Женщины
-										</button>
+							<!-- ========================== / Language-menu / ========================== -->
+							<ul class="nav-menu__language language-menu">
+								<li class="language-menu__item">
+									<label class="language-menu__find-item" for="find-item">
+										Поиск
+										<input type="text" name="" id="find-item" />
+									</label>
+								</li>
+								<li class="language-menu__item">
+									<a class="language-menu__link" href="http://">RU</a>
+								</li>
+								<li class="language-menu__item">
+									<a class="language-menu__link" href="http://">EN</a>
+								</li>
+							</ul>
+							<!-- ========================== / Language-menu / ========================== -->
+							<!-- ========================== / Product-menu / ========================== -->
+							<div class="nav-menu__products products-menu">
+								<button class="products-menu__button">ОДЕЖДА</button>
+								<ul class="products-menu__item cloth-menu">
+									<li class="cloth-menu__item"><a href="">Свитшоты
+											и
+											худи</a></li>
+									<li class="cloth-menu__item"><a href="">Платья
+											юбки</a>
 									</li>
-									<li class="mobile-menu__item">
-										<button class="mobile-menu__button" type="button">
-											Мужчины
-										</button>
+									<li class="cloth-menu__item"><a href="">Футболки
+											и
+											топы</a></li>
+									<li class="cloth-menu__item"><a href="">Брюки и
+											шорты</a></li>
+									<li class="cloth-menu__item"><a href="">Рубашки</a></li>
+									<li class="cloth-menu__item"><a href="">Комбинезоны</a>
 									</li>
-									<li class="mobile-menu__item">
-										<label class="mobile-menu__find-item" for="find-item">
-											Поиск
-											<input type="text" name="" id="find-item" />
-										</label>
+									<li class="cloth-menu__item"><a href="">Леггинсы</a>
 									</li>
-									<li class="mobile-menu__item">
-										<a class="mobile-menu__link" href="http://">UA</a>
-									</li>
-									<li class="mobile-menu__item">
-										<a class="mobile-menu__link" href="http://">EN</a>
+									<li class="cloth-menu__item"><a href="">Куртки</a></li>
+									<li class="cloth-menu__item"><a href="">Пальто</a></li>
+									<li class="cloth-menu__item"><a href="">Плащи</a></li>
+									<li class="cloth-menu__item"><a href="">Желетки</a></li>
+									<li class="cloth-menu__item"><a href="">Ветровки</a>
 									</li>
 								</ul>
-							</ul>
 
-							<!-- Products Mobile menu -->
-							<ul class="mobile-menu__products-menu products-menu-mobile">
-								<li class="products-menu-mobile__item">
-									<a href="" class="product-menu-mobile__link">Одежда</a>
-									<ul class="products-menu-mobile__cloth cloth-menu-mobile">
-										<li class="cloth-menu-mobile__item">
-											<a href="">Свитшоты и худи</a>
-										</li>
-										<li class="cloth-menu-mobile__item">
-											<a href="">Платья юбки</a>
-										</li>
-										<li class="cloth-menu-mobile__item">
-											<a href="">Футболки и топы</a>
-										</li>
-										<li class="cloth-menu-mobile__item">
-											<a href="">Брюки и шорты</a>
-										</li>
-										<li class="cloth-menu-mobile__item"><a href="">Рубашки</a></li>
-										<li class="cloth-menu-mobile__item">
-											<a href="">Комбинезоны</a>
-										</li>
-										<li class="cloth-menu-mobile__item"><a href="">Леггинсы</a></li>
-										<li class="cloth-menu-mobile__item"><a href="">Куртки</a></li>
-										<li class="cloth-menu-mobile__item"><a href=""></a>Пальто</li>
-										<li class="cloth-menu-mobile__item"><a href="">Плащи</a></li>
-										<li class="cloth-menu-mobile__item"><a href="">Желетки</a></li>
-										<li class="cloth-menu-mobile__item"><a href="">Ветровки</a></li>
-									</ul>
+
+								<button class="products-menu__button">ОБУВЬ</button>
+								<ul class="products-menu__item shoes-menu">
+									<li class="shoes-menu__item"><a href="">Кроссовки</a>
+									</li>
+									<li class="shoes-menu__item"><a href="">Шлепанцы</a>
+									</li>
+								</ul>
+
+
+								<button class="products-menu__button">СУМКИ</button>
+								<ul class="products-menu__item bags-menu">
+									<li class="bags-menu__item"><a href="">Сумки</a>
+									</li>
+									<li class="bags-menu__item"><a href="">Рюкзаки</a></li>
+									<li class="bags-menu__item"><a href="">Кроссбоди</a>
+									</li>
+									<li class="bags-menu__item"><a href="">Поясные</a></li>
+									<li class="bags-menu__item"><a href="">Спортивные</a>
+									</li>
+									<li class="bags-menu__item"><a href="">Шопперы</a></li>
+								</ul>
+
+
+								<button class="products-menu__button">АКСЕСУАРИ</button>
+								<ul class="products-menu__item accesories-menu">
+									<li class="accesories-menu__item">
+										<a href="">Головные уборы</a>
+									</li>
+									<li class="accesories-menu__item"><a href="">Перчатки</a></li>
+									<li class="accesories-menu__item">
+										<a href="">Шарфы и платки</a>
+									</li>
+									<li class="accesories-menu__item"><a href="">Носки </a>
+									</li>
+									<li class="accesories-menu__item"><a href="">Гетры</a>
+									</li>
+									<li class="accesories-menu__item"><a href="">Другое</a>
+									</li>
+								</ul>
+
+
+								<h2 class="products-menu__button">БЕЛЬЕ</h2>
+								<ul class="products-menu__item underwear-menu">
+									<li class="underwear-menu__item"><a href="">Разное</a>
+									</li>
+								</ul>
+								<!-- ========================== / Product-menu / ========================== -->
+							</div>
+							<!-- ========================== / Brands-menu / ========================== -->
+
+							<ul class="nav-menu__brands brands-menu">
+								<li class="brands-menu__item"><a href="">DEHA</a>
 								</li>
-								<li class="products-menu-mobile__item">
-									<a href="" class="product-menu-mobile__link">Обувь</a>
-									<ul class="products-menu-mobile__boots boots-product">
-										<li class="boots-product__item">
-											<a href="">Кроссовки</a>
-										</li>
-										<li class="boots-product__item"><a href="">Шлепанцы</a></li>
-									</ul>
-								</li>
-								<li class="products-menu-mobile__item">
-									<a href="" class="product-menu-mobile__link">Сумки</a>
-									<ul class="products-menu-mobile__bags bags-menu-mobile">
-										<li class="bags-menu-mobile-item"><a href="">Сумки</a></li>
-										<li class="bags-menu-mobile-item"><a href="">Рюкзаки</a></li>
-										<li class="bags-menu-mobile-item"><a href="">Кроссбоди</a></li>
-										<li class="bags-menu-mobile-item"><a href="">Поясные</a></li>
-										<li class="bags-menu-mobile-item"><a href="">Спортивные</a></li>
-										<li class="bags-menu-mobile-item"><a href="">Шопперы</a></li>
-									</ul>
-								</li>
-								<li class="products-menu-mobile__item">
-									<a href="" class="product-menu-mobile__link">Аксесуары</a>
-									<ul class="products-menu-mobile__acessories acessories-mobile-menu">
-										<li class="acessories-mobile-menu__item">
-											<a href="">Головные уборы</a>
-										</li>
-										<li class="acessories-mobile-menu__item">
-											<a href=""> Перчатки</a>
-										</li>
-										<li class="acessories-mobile-menu__item">
-											<a href=""> Шарфы и платки</a>
-										</li>
-										<li class="acessories-mobile-menu__item">
-											<a href=""> Носки </a>
-										</li>
-										<li class="acessories-mobile-menu__item">
-											<a href="">Гетры</a>
-										</li>
-										<li class="acessories-mobile-menu__item">
-											<a href="">Другое</a>
-										</li>
-									</ul>
-								</li>
-								<li class="products-menu-mobile__item">
-									<a href="" class="product-menu-mobile__link">Белье</a>
-									<ul class="products-menu-mobile__underwear underwear-mobile-menu">
-										<li class="underwear-mobile-menu"><a href="">Разное</a></li>
-									</ul>
-								</li>
+								<li class="brands-menu__item"><a href="">American
+										vintage</a></li>
+								<li class="brands-menu__item"><a href="">george gina
+										lucy
+									</a></li>
+								<li class="brands-menu__item"><a href="">birkenstock
+									</a></li>
 							</ul>
-							<!-- Бренды -->
-							<ul class="mobile-menu__brands-menu brands-menu-mobile">
-								<li class="brands-menu-mobile__item">
-									<a href="" class="brands-menu-mobile__link">DEHA</a>
-								</li>
-								<li class="brands-menu-mobile__item">
-									<a href="" class="brands-menu-mobile__link">American vintage</a>
-								</li>
-								<li class="brands-menu-mobile__item">
-									<a href="" class="brands-menu-mobile__link">george gina lucy</a>
-								</li>
-								<li class="brands-menu-mobile__item">
-									<a href="" class="brands-menu-mobile__link">birkenstock</a>
-								</li>
-							</ul>
+							<!-- ========================== / Brands-menu / ========================== -->
+
 						</div>
 					</div>
+
+
+					<!-- ========================== / Cabinet / ========================== -->
+					<ul class="nav-menu__actions actions-nav">
+						<li class="actions-nav__menu">
+							<a href="http://">
+								<svg class="svg-svg-profile-dims" width="16" height="18">
+									<use href="img/icons/icons.svg#svg-profile"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="actions-nav__menu">
+							<a href="http://">
+								<svg class="svg-svg-like-dims" width="19" height="18">
+									<use href="img/icons/icons.svg#svg-like"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="actions-nav__menu">
+							<a href="http://">
+								<svg class="svg-svg-basket-dims" width="16" height="18">
+									<use href="img/icons/icons.svg#svg-basket"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="actions-nav__menu">
+							<button class="menu-toggle js-open-menu modal-scroll" aria-expanded="false" aria-controls="mobile-menu">
+								<svg class="svg-svg-burger-dims" width="16" height="18">
+									<use href="img/icons/icons.svg#svg-burger"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="actions-nav__menu">
+							<button type="button" class="menu-toggle js-close-menu modal-scroll hide">
+								<svg class="svg-svg-burger-close-dims" width="16" height="18">
+									<use xlink:href="img/icons/icons.svg#svg-burger-close"></use>
+								</svg>
+							</button>
+						</li>
+					</ul>
+					<!-- ========================== / Cabinet / ========================== -->
+
+
 				</nav>
+
+
+				<!-- =========================================================================== -->
+
+				<!-- Меню  бургер -->
+
+
 			</div>
 		</header>
 
@@ -242,33 +222,43 @@
 	</div>
 </div> -->
 
-	<div id="popup" aria-hidden="true" class="popup">
+	<div id="popup" aria-hidden="true" class="popup" style="display:none;">
 		<div class="popup__wrapper">
 			<div class="popup__content products-menu-list">
-				<button data-close type="button" class="popup__close">Закрыть</button>
+				<button data-close type="button" class="popup__close">Закрыть
+				</button>
 				<div class="popup__text">
 					<div class="product-menu__wrapper">
 						<h2 class="product-menu__title">ОДЕЖДА</h2>
 						<ul class="products-menu__item cloth-menu">
-							<li class="cloth-menu__item"><a href="">Свитшоты и худи</a></li>
-							<li class="cloth-menu__item"><a href="">Платья юбки</a></li>
-							<li class="cloth-menu__item"><a href="">Футболки и топы</a></li>
-							<li class="cloth-menu__item"><a href="">Брюки и шорты</a></li>
+							<li class="cloth-menu__item"><a href="">Свитшоты и
+									худи</a></li>
+							<li class="cloth-menu__item"><a href="">Платья юбки</a>
+							</li>
+							<li class="cloth-menu__item"><a href="">Футболки и
+									топы</a></li>
+							<li class="cloth-menu__item"><a href="">Брюки и
+									шорты</a></li>
 							<li class="cloth-menu__item"><a href="">Рубашки</a></li>
-							<li class="cloth-menu__item"><a href="">Комбинезоны</a></li>
-							<li class="cloth-menu__item"><a href="">Леггинсы</a></li>
+							<li class="cloth-menu__item"><a href="">Комбинезоны</a>
+							</li>
+							<li class="cloth-menu__item"><a href="">Леггинсы</a>
+							</li>
 							<li class="cloth-menu__item"><a href="">Куртки</a></li>
 							<li class="cloth-menu__item"><a href="">Пальто</a></li>
 							<li class="cloth-menu__item"><a href="">Плащи</a></li>
 							<li class="cloth-menu__item"><a href="">Желетки</a></li>
-							<li class="cloth-menu__item"><a href="">Ветровки</a></li>
+							<li class="cloth-menu__item"><a href="">Ветровки</a>
+							</li>
 						</ul>
 					</div>
 					<div class="product-menu__wrapper">
 						<h2 class="product-menu__title">ОБУВЬ</h2>
 						<ul class="products-menu__item shoes-menu">
-							<li class="shoes-menu__item"><a href="">Кроссовки</a></li>
-							<li class="shoes-menu__item"><a href="">Шлепанцы</a></li>
+							<li class="shoes-menu__item"><a href="">Кроссовки</a>
+							</li>
+							<li class="shoes-menu__item"><a href="">Шлепанцы</a>
+							</li>
 						</ul>
 					</div>
 					<div class="product-menu__wrapper">
@@ -276,9 +266,11 @@
 						<ul class="products-menu__item bags-menu">
 							<li class="bags-menu__item"><a href="">Сумки</a></li>
 							<li class="bags-menu__item"><a href="">Рюкзаки</a></li>
-							<li class="bags-menu__item"><a href="">Кроссбоди</a></li>
+							<li class="bags-menu__item"><a href="">Кроссбоди</a>
+							</li>
 							<li class="bags-menu__item"><a href="">Поясные</a></li>
-							<li class="bags-menu__item"><a href="">Спортивные</a></li>
+							<li class="bags-menu__item"><a href="">Спортивные</a>
+							</li>
 							<li class="bags-menu__item"><a href="">Шопперы</a></li>
 						</ul>
 					</div>
@@ -292,22 +284,35 @@
 							<li class="accesories-menu__item">
 								<a href="">Шарфы и платки</a>
 							</li>
-							<li class="accesories-menu__item"><a href="">Носки </a></li>
-							<li class="accesories-menu__item"><a href="">Гетры</a></li>
-							<li class="accesories-menu__item"><a href="">Другое</a></li>
+							<li class="accesories-menu__item"><a href="">Носки </a>
+							</li>
+							<li class="accesories-menu__item"><a href="">Гетры</a>
+							</li>
+							<li class="accesories-menu__item"><a href="">Другое</a>
+							</li>
 						</ul>
 					</div>
 					<div class="product-menu__wrapper">
 						<h2 class="product-menu__title">БЕЛЬЕ</h2>
 						<ul class="products-menu__item underwear-menu">
-							<li class="underwear-menu__item"><a href="">Разное</a></li>
+							<li class="underwear-menu__item"><a href="">Разное</a>
+							</li>
 						</ul>
 					</div>
+					<ul class="product-menu__brands brands-menu">
+						<li class="brands-menu__item"><a href="">DEHA</a></li>
+						<li class="brands-menu__item"><a href="">American
+								vintage</a></li>
+						<li class="brands-menu__item"><a href="">george gina lucy
+							</a></li>
+						<li class="brands-menu__item"><a href="">birkenstock
+							</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230922080931"></script>
+	<script src="js/app.min.js?_v=20230924111326"></script>
 </body>
 
 </html>
