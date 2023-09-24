@@ -19,7 +19,7 @@ import lightGallery from 'lightgallery';
 //import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
 
 // Базовые стили
-import '@scss/libs/gallery/lightgallery.scss';
+// import '@scss/libs/gallery/lightgallery.scss';
 // Стили дополнений
 // import '@scss/libs/gallery/lg-thumbnail.scss';
 // import '@scss/libs/gallery/lg-video.scss';
