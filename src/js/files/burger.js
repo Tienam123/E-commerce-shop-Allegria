@@ -19,16 +19,18 @@ export const burgerFunction = () => {
     if (mobileMenu.classList.contains("is-open")) {
       closeMenuBtn.classList.remove("hide");
       openMenuBtn.classList.add("hide");
+      document.body.classList.add("blocked");
     } else {
       closeMenuBtn.classList.add("hide");
       openMenuBtn.classList.remove("hide");
+      document.body.classList.remove("blocked");
     }
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
 
-  window.matchMedia("(min-width: 920px)").addEventListener("change", (e) => {
+  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
@@ -36,3 +38,6 @@ export const burgerFunction = () => {
     closeMenuBtn.classList.add("hide");
   });
 };
+
+
+

@@ -33,6 +33,10 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: auto;
+}
+body.blocked {
+	overflow: hidden;
 }
 input,
 button,

@@ -3,3 +3,8 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { burgerFunction } from "./burger.js";
 burgerFunction();
+
+
+// Spoilers in Burger
+import {accordeon} from "./accordeon.js"
+accordeon();
