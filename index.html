@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230925051440" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230925082733" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,8 +56,12 @@
 							<!-- ========================== / Language-menu / ========================== -->
 							<!-- ========================== / Product-menu / ========================== -->
 							<div class="menu__products products-list">
-								<button class="products-list__button">ОДЕЖДА</button>
-								<ul class="products-list__item cloth-menu">
+								<div data-tab="tab-1" class="products-list__wrapper">
+									<button class="products-list__button">ОДЕЖДА
+									</button>
+									<span></span>
+								</div>
+								<ul id="tab-1" class="products-list__item cloth-menu">
 									<li class="cloth-menu__item"><a href="">Свитшоты
 											и
 											худи</a></li>
@@ -67,7 +71,8 @@
 									<li class="cloth-menu__item"><a href="">Футболки
 											и
 											топы</a></li>
-									<li class="cloth-menu__item"><a href="">Брюки и
+									<li class="cloth-menu__item"><a href="">Брюки
+											и
 											шорты</a></li>
 									<li class="cloth-menu__item"><a href="">Рубашки</a></li>
 									<li class="cloth-menu__item"><a href="">Комбинезоны</a>
@@ -83,8 +88,13 @@
 								</ul>
 
 
-								<button class="products-list__button">ОБУВЬ</button>
-								<ul class="products-list__item shoes-menu">
+
+								<div data-tab="tab-2" class="products-list__wrapper">
+									<button class="products-list__button">ОБУВЬ
+									</button>
+									<span></span>
+								</div>
+								<ul id="tab-2" class="products-list__item shoes-menu">
 									<li class="shoes-menu__item"><a href="">Кроссовки</a>
 									</li>
 									<li class="shoes-menu__item"><a href="">Шлепанцы</a>
@@ -92,8 +102,13 @@
 								</ul>
 
 
-								<button class="products-list__button">СУМКИ</button>
-								<ul class="products-list__item bags-menu">
+
+								<div data-tab="tab-3" class="products-list__wrapper">
+									<button class="products-list__button">СУМКИ
+									</button>
+									<span></span>
+								</div>
+								<ul id="tab-3" class="products-list__item bags-menu">
 									<li class="bags-menu__item"><a href="">Сумки</a>
 									</li>
 									<li class="bags-menu__item"><a href="">Рюкзаки</a></li>
@@ -106,8 +121,13 @@
 								</ul>
 
 
-								<button class="products-list__button">АКСЕСУАРИ</button>
-								<ul class="products-list__item accesories-menu">
+
+								<div data-tab="tab-4" class="products-list__wrapper">
+									<button class="products-list__button">АКСЕСУАРИ
+									</button>
+									<span></span>
+								</div>
+								<ul id="tab-4" class="products-list__item accesories-menu">
 									<li class="accesories-menu__item">
 										<a href="">Головные уборы</a>
 									</li>
@@ -124,11 +144,17 @@
 								</ul>
 
 
-								<button type="button" class="products-list__button">БЕЛЬЕ</button>
-								<ul class="products-list__item underwear-menu">
+
+								<div data-tab="tab-5" class="products-list__wrapper">
+									<button type="button" class="products-list__button">БЕЛЬЕ
+									</button>
+									<span></span>
+								</div>
+								<ul id="tab-5" class="products-list__item underwear-menu">
 									<li class="underwear-menu__item"><a href="">Разное</a>
 									</li>
 								</ul>
+
 								<!-- ========================== / Product-menu / ========================== -->
 							</div>
 							<!-- ========================== / Brands-menu / ========================== -->
@@ -453,7 +479,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230925051440"></script>
+	<script src="js/app.min.js?_v=20230925082733"></script>
 </body>
 
 </html>
