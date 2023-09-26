@@ -1,0 +1,131 @@
+@import "node_modules/swiper/swiper";
+
+.hero {
+  // .hero__container
+  &__container {
+    margin-top: 60px;
+  }
+}
+
+.swiper {
+  height: 585px;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  position: relative;
+  // .swiper-slide__description
+  &__description {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00000066;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  // .swiper-slide__images
+  &__images {
+    height: 585px;
+    display: flex;
+  }
+
+}
+
+.description-slide {
+  text-align: center;
+  // .description-slide__text
+  &__text {
+    color: #EAE9E8;
+    font-family: Cormorant;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  // .description-slide__title
+  &__title {
+    color: #EAE9E8;
+    font-family: Cormorant;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    color: #EAE9E8;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+  }
+}
+
+.swiper-images {
+  &__item.slide-2 {
+    &:first-child {
+      background-color: #fff;
+      @include adaptiveValue("width", 412, 384, 1376, 767.98);
+      @media (max-width: $mobile) {
+        width: 50%;
+      }
+
+    }
+
+    &:last-child {
+      @include adaptiveValue("width", 963, 384, 1376, 767.98);
+      @media (max-width: $mobile) {
+        width: 50%;
+      }
+      background-color: #fff;
+    }
+  }
+
+  // .swiper-images__item
+  &__item.slide-1 {
+    &:first-child {
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+      width: 67.5%;
+      background-color: blue;
+    }
+
+    &:last-child {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+      width: 32.5%;
+      background-color: red;
+    }
+  }
+}
+
+.swiper-pagination {
+}
+
+.swiper-button-prev {
+}
+
+.swiper-button-next {
+}
+
+.swiper-scrollbar {
+}

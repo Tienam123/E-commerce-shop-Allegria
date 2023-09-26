@@ -10,11 +10,14 @@
 }
 :focus,
 :active {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
 	// outline: none;
 }
 a:focus,
 a:active {
 	// outline: none;
+	color: currentColor;
 }
 html,
 body {

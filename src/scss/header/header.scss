@@ -2,7 +2,8 @@
   position: fixed;
   width: 100%;
   background-color: #fff;
-  padding: 18px 0;
+  border-bottom: 1px solid #EAE9E8;
+  z-index: 10;
   // .header__container
   &__container {
     display: flex;
@@ -11,8 +12,10 @@
 
   // .header__logo
   &__logo {
+    padding: 20px 0;
     z-index: 5;
   }
+
 
   // .header__menu
   &__menu {
@@ -38,9 +41,16 @@
       display: none;
     }
   }
+  button {
+    transition: all $animation;
+    &:hover,&:focus {
+      color: $hoverColor;
+    }
+  }
 }
 
 .svg-svg-logo-dims {
+
 }
 
 .header__menu.is-open .menu__body {
@@ -54,25 +64,28 @@
 .menu {
   // .menu__body
   &__body {
+
     @media (max-width: $mobile) {
       position: fixed;
       width: 100%;
       height: 100%;
       top: -100%;
       left: 0;
-      transition: all 0.3s ease 0s;
       background-color: #fff;
+      transition: all 1s ease 0s;
       overflow: scroll;
+      border-bottom: 1px solid transparent;
+
       &::before {
         content: "";
+        top: 0;
         position: fixed;
-        top: -100%;
         left: 0;
-        transition: all 0.3s ease 0s;
         width: 100%;
         background-color: #fff;
-        z-index: 2;
-        height: rem(50);
+        z-index: 4;
+        height: 60px;
+        border-bottom: 1px solid #EAE9E8;
       }
     }
   }
@@ -80,28 +93,31 @@
 
   // .menu__list
   &__list {
+    z-index: 4;
     overflow: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+
     @include adaptiveValue("column-gap", 30, 0, 767.98, 320);
-    justify-content: center;
     align-items: center;
-    padding: rem(0) rem(10);
-    @include adaptiveValue("padding-top", 180, 100, 767.98);
 
 
     @media (max-width: $mobile) {
+      margin-top: 60px;
       text-align: center;
+      min-height: 90%;
+      @include adaptiveValue("padding-top", 80, 45, 767.98);
+
     }
     @media (min-width: $mobile) {
-
+      column-gap: 10px;
     }
   }
 
   // .menu__gender
   &__gender {
     display: flex;
-    column-gap: 20px;
+    @include adaptiveValue("column-gap", 20, 10);
     justify-content: center;
     align-items: center;
     line-height: normal;
@@ -112,9 +128,9 @@
   // .menu__language
   &__language {
     display: flex;
-    column-gap: 20px;
     justify-content: center;
     align-items: center;
+    @include adaptiveValue("column-gap", 20, 10);
   }
 
   // .menu__products
@@ -124,10 +140,14 @@
       display: none;
     }
     @media (max-width: $mobile) {
-      flex: 1 1 100%;
+      width: 100%;
+      max-height: 100%;
       display: flex;
+      flex: 1 1 auto;
       flex-direction: column;
       align-items: center;
+      row-gap: 30px;
+      margin-top: 60px;
 
     }
 
@@ -137,12 +157,14 @@
 
   // .menu__brands
   &__brands {
+    padding: 0 20px;
     @media (min-width: $mobile) {
       display: none;
     }
     @media (max-width: $mobile) {
       display: flex;
       column-gap: 20px;
+      flex-direction: flex-end;
     }
   }
 }
@@ -151,13 +173,46 @@
 .js-menu-container {
 }
 
+.wrapper-gender-and-find {
+  display: flex;
+  column-gap: 20px;
+}
+
 .gender-list {
   // .gender-list__item
+  &__item.active {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $hoverColor;
+    }
+  }
+
   &__item {
+    @media (min-width: $mobile) {
+      padding: 21px 0px;
+    }
+    @media (max-width: $mobile) {
+      padding: 12px 0px;
+    }
+
   }
 
   // .gender-list__button
   &__button {
+    padding: 10px 0px;
+    transition: color $animation;
+
+    &:hover, &:focus {
+      color: $hoverColor;
+    }
   }
 
   // .gender-list__button-active
@@ -168,7 +223,28 @@
 
 .language-list {
   // .language-list__item
-  &__item {
+&__item {
+  @media (min-width: $mobile) {
+    padding: 22px 0;
+  }
+  @media (max-width: $mobile) {
+    padding: 12px 0;
+  }
+
+}
+  &__item.active {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: $hoverColor;
+    }
   }
 
   // .language-list__find-item
@@ -177,20 +253,32 @@
     justify-content: center;
     align-items: center;
 
+
     input {
       margin-left: rem(20);
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid $mainColor;
       width: 100%;
+      outline: none;
+      transition: all $animation;
+
+      &:focus-within {
+        border-bottom: 1px solid $hoverColor;
+      }
     }
   }
 
   // .language-list__link
   &__link {
+    padding: 10px 0;
+    transition: color $animation;
+
+    &:hover, &:focus {
+      color: $hoverColor;
+    }
   }
 }
 
 .products-list {
-
   // .product-list__wrapper
   &__wrapper.active {
     span {
@@ -199,6 +287,7 @@
         visibility: hidden;
         transition: all 0.3s linear;
       }
+
       &::after {
         background-color: $hoverColor;
         transform: rotate(90deg);
@@ -291,6 +380,13 @@
 .cloth-menu {
   // .cloth-menu__item
   &__item {
+    a {
+      transition: all $animation;
+      &:hover,&:focus {
+        color: $hoverColor;
+
+      }
+    }
   }
 }
 
@@ -336,6 +432,18 @@
 .actions-list {
   // .actions-list__item
   &__item {
+    button {
+      transition: all $animation;
+     &:hover,&:focus {
+       color: $hoverColor;
+      }
+    }
+    a {
+      transition: all $animation;
+      &:hover,&:focus {
+        color: $hoverColor;
+      }
+    }
   }
 }
 
@@ -343,9 +451,11 @@
 }
 
 .svg-svg-like-dims {
+
 }
 
 .svg-svg-basket-dims {
+
 }
 
 .burger-open-button {
@@ -383,6 +493,7 @@
 
 .svg-svg-burger-close-dims {
 }
+
 
 
 
